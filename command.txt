@@ -1,0 +1,6 @@
+dotnet new
+dotnet new --list
+# Create project
+dotnet new webapi
+# Build project
+dotnet build
