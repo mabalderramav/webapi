@@ -4,3 +4,5 @@ dotnet new --list
 dotnet new webapi
 # Build project
 dotnet build
+# Run project
+dotnet run
