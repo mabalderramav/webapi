@@ -6,3 +6,5 @@ dotnet new webapi
 dotnet build
 # Run project
 dotnet run
+# Minimal api
+dotnet new web
