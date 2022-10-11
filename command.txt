@@ -8,3 +8,19 @@ dotnet build
 dotnet run
 # Minimal api
 dotnet new web
+# Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.10
+# Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.10
+# Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.10
+# Middleware
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0
+# Repository
+https://github.com/platzi/curso-apis-net
+
+
+
+
+# Remove package example
+dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
