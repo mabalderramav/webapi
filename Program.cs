@@ -7,6 +7,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// builder.Services.AddScoped<IHelloWordService, HelloWordService>();
+builder.Services.AddScoped<IHelloWordService>(p => new HelloWordService());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,7 +24,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 // app.UseWelcomePage();
-app.UseTimeMiddleware();
+// app.UseTimeMiddleware();
 
 app.MapControllers();
 

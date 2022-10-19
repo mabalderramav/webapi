@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace webapi.Controllers;
+
+using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/v1/[controller]")]
