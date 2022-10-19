@@ -18,6 +18,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.10
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0
 # Repository
 https://github.com/platzi/curso-apis-net
+#Logging in .Net Core and ASP.Net Core
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-6.0
 
 
 
