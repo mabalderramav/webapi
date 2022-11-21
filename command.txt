@@ -8,12 +8,21 @@ dotnet build
 dotnet run
 # Minimal api
 dotnet new web
+# Entity Framework
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.10
+
+# Entity Framework in memory
+dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0.10
+
 # Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.10
+
 # Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.10
+
 # Microsoft.EntityFrameworkCore.Tools
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.10
+
 # Middleware
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0
 # Repository

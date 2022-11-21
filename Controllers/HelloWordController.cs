@@ -15,6 +15,7 @@ public class HelloWordController : ControllerBase
         this.helloWordService = helloWordService;
     }
 
+    [HttpGet]
     public IActionResult Get()
     {
         var helloWord = helloWordService.GetHelloWord();
