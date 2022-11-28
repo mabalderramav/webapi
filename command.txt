@@ -1,3 +1,6 @@
+# Download .NET 7.0
+https://dotnet.microsoft.com/en-us/download/dotnet/7.0
+
 # Create solution
 dotnet new sln -o webapisolution
 
@@ -9,3 +12,6 @@ dotnet sln webapisolution.sln add ./webapi/webapi.csproj
 
 # It can also create the new project, check list of available project templates using command
 dotnet new -l
+
+# Create new nunit test project
+dotnet new nunit -o webapi.test
