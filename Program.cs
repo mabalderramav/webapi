@@ -1,3 +1,4 @@
+using webapi;
 using webapi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddSqlServer<TasksContext>(builder.Configuration.GetConnectionString("cnTask"));
 // builder.Services.AddScoped<IHelloWordService, HelloWordService>();
 builder.Services.AddScoped<IHelloWordService>(p => new HelloWordService());
 builder.Services.AddScoped<ICategoryService, CategoryService>();
