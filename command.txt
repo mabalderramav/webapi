@@ -8,10 +8,14 @@ dotnet new sln -o webapisolution
 dotnet sln webapisolution.sln add ./webapi/webapi.csproj
 
 # Add project references
-# Example dotnet add .\MyApiApp.WebApi\MyApiApp.WebApi.csproj reference .\MyApiApp.Repository\MyApiApp.Repository.csproj
+dotnet add ./webapi.test/webapi.test.csproj reference ./webapi/webapi.csproj
 
 # It can also create the new project, check list of available project templates using command
 dotnet new -l
 
 # Create new nunit test project
 dotnet new nunit -o webapi.test
+
+# Run a specific project
+# https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-run
+dotnet run --project .\webapi\
